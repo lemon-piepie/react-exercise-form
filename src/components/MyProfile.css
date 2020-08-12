@@ -1,0 +1,59 @@
+*{
+    border: none;
+}
+input{
+    outline-style: none ;
+    border: 1px solid #ccc;
+}
+
+input[type=text],select,textarea{
+    width: 70%;
+    font-size: 15px;
+}
+input[type=text],select{
+    height: 30px;
+    line-height: 30px;
+}
+input[type=checkbox]{
+    display: inline-block;
+    margin-right: 10px;
+    height: 14px;
+    width: 14px;
+}
+input[type=submit]{
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: darkturquoise;
+    color: black;
+    position: relative;
+    left: 40%;
+    margin-left: -100px;
+}
+
+.myForm{
+    width: 100%;
+    padding: 40px 70px;
+}
+.myForm h1{
+    font-size: 28px;
+    height: 40px;
+    line-height: 40px;
+    color: gray;
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+.myForm label{
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    color: gray;
+}
+.myForm form > div{
+    margin-bottom: 20px;
+}
+.myForm form .agree .agreeLabel{
+    font-size: 14px;
+    display: inline;
+}

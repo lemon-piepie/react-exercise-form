@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './myProfile.less';
+import './MyProfile.css';
 
 class MyProfile extends Component {
   state = {
@@ -46,7 +46,8 @@ class MyProfile extends Component {
         <form onSubmit={this.handleSubmit}>
           <div className="username">
             <label htmlFor="name">Name</label>
-            <input type="text" value={this.state.name} onChange={this.inputName}></input>
+            <input type="text" value={this.state.name} onChange={this.inputName} placeholder="YourName" className="nameText">
+            </input>
           </div>
           
           <div className="gender">
@@ -65,8 +66,8 @@ class MyProfile extends Component {
           </div>
 
           <div className="agree">
-            <input type="checkbox" name="agree" onClick={this.agree}></input>
-            <label htmlFor="agree">I have read the terms of conduct.</label>
+            <input type="checkbox" name="agree" onClick={this.agree} className="agreeCheck"></input>
+            <label htmlFor="agree" className="agreeLabel">I have read the terms of conduct.</label>
           </div>
 
           <div className="submit">
